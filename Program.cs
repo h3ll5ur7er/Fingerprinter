@@ -1,4 +1,8 @@
-﻿namespace Fingerprinter;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Fingerprinter;
 
 public class Program {
     public static string Port = SafeSerialPort.GetPortNames().LastOrDefault() ?? throw new Exception("No serial ports found.");
